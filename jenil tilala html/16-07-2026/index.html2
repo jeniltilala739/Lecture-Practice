@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<title>Box Layout</title>
+<style>
+  body {
+    margin: 0;
+    background: #6d7a76;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 250px);
+    height: 100vh;
+    align-items: start;
+  }
+
+  .box {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 4px;
+    background: #7d8a86;
+  }
+
+  .col-left  { justify-self: start; }
+  .col-center{ justify-self: center; }
+  .col-right { justify-self: end; }
+
+  .small-box {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #333;
+    background: #9aa8a3;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="box col-left">box-9<div class="small-box"></div></div>
+    <div class="box col-center">box-5<div class="small-box"></div></div>
+    <div class="box col-right">box-1<div class="small-box"></div></div>
+
+    <div class="box col-left">box-8<div class="small-box"></div></div>
+    <div class="box col-center">box-7<div class="small-box"></div></div>
+    <div class="box col-right">box-6<div class="small-box"></div></div>
+
+    <div class="box col-left">box-2<div class="small-box"></div></div>
+    <div class="box col-center">box-4<div class="small-box"></div></div>
+    <div class="box col-right">box-3<div class="small-box"></div></div>
+  </div>
+</body>
+</html>

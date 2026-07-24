@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leo_guzal</title>
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Common CSS */
+        *, *:after, *:before {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Raleway", sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Top Bar Styling */
+        .top_bar {
+            background-color: black;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .top_bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .topbar_icons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .topbar_icons div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .social_links span {
+            cursor: pointer;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 0;
+        }
+
+        .nav_img img {
+            height: 40px;
+        }
+
+        .nav_items {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            font-weight: bold;
+        }
+
+        .nav_items li a {
+            color: black;
+            transition: color 0.3s ease;
+        }
+
+        .nav_items li:nth-child(1) a {
+            color: palevioletred;
+        }
+
+        .nav_items li a:hover {
+            color: palevioletred;
+        }
+
+        .nav_icons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav_icons div {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .nav_icons span {
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .nav_icons button {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: transparent;
+            border: 1px solid #ddd;
+            padding: 8px 15px;
+            cursor: pointer;
+            font-family: "Raleway", sans-serif;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Top Bar Section -->
+        <div class="top_bar">
+            <div class="container">
+                <p>New offer! Get 30% off one whole year of Unlimited learning.</p>
+                <div class="topbar_icons">
+                    <div>
+                        <p><span><i class="fa-solid fa-phone"></i></span>Call us: +1(800)123 456</p>
+                    </div>
+                    <div class="social_links">
+                        <span><i class="fa-brands fa-facebook-f"></i></span>
+                        <span><i class="fa-brands fa-x-twitter"></i></span>
+                        <span><i class="fa-brands fa-pinterest"></i></span>
+                        <span><i class="fa-brands fa-instagram"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar Section -->
+        <div class="container">
+            <nav class="navbar">
+                <div class="nav_img">
+                    <!-- Agar image show nahi ho toh yaha direct text ya image link daal sakte hain -->
+                    <img src="./asset/images/asset 0.jpeg" alt="Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <h2 style="display:none; color:palevioletred;">leo_guzal</h2>
+                </div>
+                <div class="nav_menu">
+                    <ul class="nav_items">
+                        <li><a class="nav_link" href="#">Home</a></li>
+                        <li><a class="nav_link" href="#">Shop</a></li>
+                        <li><a class="nav_link" href="#">Blog</a></li>
+                        <li><a class="nav_link" href="#">Pages</a></li>
+                        <li><a class="nav_link" href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav_icons">
+                    <div>
+                        <span><i class="fa-solid fa-magnifying-glass" style="color: rgb(30, 48, 80);"></i></span>
+                        <span><i class="fa-regular fa-user" style="color: rgb(30, 48, 80);"></i></span>
+                    </div>
+                    <div>
+                        <button><i class="fa-solid fa-cart-shopping" style="color: rgb(30, 48, 80);"></i> Cart: 0 Item</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+</body>
+</html>
